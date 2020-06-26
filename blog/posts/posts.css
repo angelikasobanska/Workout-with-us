@@ -1,0 +1,176 @@
+.posts-wrapper {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posts {
+  width: 100%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #b5b8bd;
+  margin: 2rem 0;
+  align-items:center;
+}
+
+.posts-text {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.posts-text-category {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: rgba(63, 63, 63, 0.8);
+}
+
+.posts-text-title,
+.posts-text-title:hover {
+  color: black;
+}
+
+.posts-img {
+  width: 90%;
+}
+
+.posts-img img {
+  width: 100%;
+}
+
+.posts-link {
+  border: 1px solid rgba(63, 63, 63, 0.8);
+  padding: 0.4rem 0.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/*Aside starts here*/
+
+aside {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.posts-aside-title {
+  padding: 1rem 0;
+  text-transform: capitalize;
+}
+
+.posts-aside-list {
+  line-height: 2;
+  list-style: none;
+}
+
+.posts-aside-list li a,
+.posts-aside-list li a:hover {
+  color: black;
+}
+
+.lni-star {
+  color: black;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .posts-wrapper {
+    margin: 1rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .posts-text {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    align-items: flex-start;
+  }
+
+  .posts-text-title {
+    padding: 0.3rem 0 0.8rem 0rem;
+  }
+
+  .posts-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .posts-img img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .posts-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2.5rem 3rem;
+  }
+
+  .posts {
+    width: 70%;
+  }
+
+  article {
+    min-height: 45vh;
+  }
+
+  .posts-text {
+    width: 65%;
+    padding: 0.5rem 3rem;
+  }
+
+  .posts-text-category {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: rgba(63, 63, 63, 0.8);
+  }
+
+  .posts-text-title {
+    padding: 0.3rem 0 0.8rem 0rem;
+  }
+
+  .posts-img {
+    width: 35%;
+    justify-content: flex-start;
+  }
+
+  .posts-img img {
+    width: 100%;
+  }
+
+  aside {
+    width: 25%;
+    position: fixed;
+    top: 7rem;
+    right: 0;
+    padding: 3rem 2rem;
+    margin-right: 2rem;
+    text-align: left;
+  }
+
+  .posts-aside-title {
+    padding: 1rem 0;
+  }
+
+  .posts-aside-list {
+    line-height: 2.5;
+  }
+}

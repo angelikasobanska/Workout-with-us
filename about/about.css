@@ -1,0 +1,174 @@
+/*About intro section */
+
+.about-intro {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  width: 100%;
+}
+
+.about-intro-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url("img/zespol.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: 1 1 30rem;
+  padding: 2rem;
+}
+
+.about-intro-img-text {
+  color: white;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.about-intro-text {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-intro-text2 {
+  padding: 1.5rem 2rem;
+  text-align: justify;
+}
+
+/*About programs section*/
+
+.about-programs {
+  min-height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent),
+    url("img/fitness.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-programs-title {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about-programs-list {
+  list-style: none;
+}
+
+.about-programs-list li {
+  line-height: 200%;
+  font-size: 1.3rem;
+}
+
+.lni-checkmark-circle {
+  margin: 0.5rem;
+}
+
+.about-programs .button {
+  border: none;
+  padding: 0.4rem 1rem;
+  margin: 1rem 0;
+}
+
+/*About Numbers section */
+
+.about-numbers {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.world-img {
+  width: 90%;
+}
+
+.world-img img {
+  width: 100%;
+}
+
+.about-counter-wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-counter {
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.about-counter-mini {
+  display: flex;
+}
+
+.about-counter-item-special {
+  padding-right: 0;
+  padding-left: 1.5rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+  .about-intro-text2 {
+    padding: 1.5rem 4rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .about-intro {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 60vh;
+  }
+
+  /*.about-intro-img {
+    width: 100%;
+    height: 100%;
+  }*/
+
+  .about-intro-text {
+    width: 100%;
+  }
+
+  .about-programs {
+    min-height: 70vh;
+  }
+
+  .about-numbers {
+    min-height: 80vh;
+  }
+
+  .about-counter-wrapper {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .world-img {
+    width: 60%;
+  }
+
+  .about-counter-inner {
+    display: flex;
+  }
+
+  .about-counter {
+    margin-right: 0rem;
+  }
+
+  .about-counter-item {
+    padding: 0 2rem;
+  }
+
+  .about-counter-item-special {
+    padding-left: 3rem;
+  }
+}

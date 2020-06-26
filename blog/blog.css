@@ -1,0 +1,208 @@
+.blog-intro {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("img/ketle.jpg");
+  min-height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-intro > h1,
+h3 {
+  line-height: 3rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/*Topics sections starts here*/
+
+.topics-section {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topics-title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.topics-links:hover {
+  text-decoration: none;
+}
+
+.topic-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.topic-item-title,
+.topic-item-title:hover {
+  padding-top: 1rem;
+  color: black;
+}
+
+.topics-button {
+  width: 70%;
+}
+
+.topics-section::after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: #b5b8bd;
+  margin: 2rem 0 0 0;
+}
+
+/*Carousel section starts here*/
+
+.blog-carousel-mobile {
+  margin: 2rem auto;
+  max-width: 430px;
+}
+
+.blog-carousel-title {
+  text-align: center;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+}
+
+.blog-card {
+  border: 1px solid #b5b8bd;
+  height: 25rem;
+}
+
+.blog-carousel-img-container {
+  width: 80%;
+}
+
+.blog-carousel-img {
+  height: 12rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.blog-card-title,
+.blog-card-title:hover {
+  color: black;
+}
+
+.blog-carousel-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.blog-carousel-text p {
+  color: rgba(41, 37, 37, 0.8);
+}
+
+.blog-carousel-text small {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.blog-carousel-text h5 {
+  font-weight: bold;
+  padding: 0.5rem 0rem;
+}
+
+.blog-carousel-link {
+  border: 1px solid rgba(63, 63, 63, 0.8);
+  padding: 0.4rem 0.5rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  width: 50%;
+  display: block;
+  margin: 1rem auto 0 auto;
+}
+
+.blog-carousel-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 3%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+
+.blog-carousel-desktop {
+  display: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 768px) {
+  .topics-section {
+    width: 60%;
+    margin: 2rem auto 4rem auto;
+  }
+
+  .topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3rem auto;
+  }
+
+  .topics-button {
+    width: 50%;
+  }
+
+  .blog-carousel-mobile {
+    width: 70%;
+    margin: 3rem auto;
+  }
+
+  .blog-carousel-img {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1080px) {
+  .blog-intro {
+    padding: 2rem 2rem;
+  }
+
+  .topics-section {
+    width: 50%;
+  }
+
+  .blog-carousel-mobile {
+    display: none;
+  }
+
+  .blog-carousel-desktop {
+    width: 80%;
+    display: block;
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+}

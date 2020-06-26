@@ -1,0 +1,303 @@
+/* Intro section */
+
+.intro {
+  min-height: 70vh;
+  background-image: url("img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%, 50%;
+  position: relative;
+}
+
+.intro-box {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  background-color: rgba(210, 103, 96, 0.7);
+}
+
+.intro-textbox {
+  padding: 2.5rem 4rem;
+}
+
+.get-started-button {
+  padding: 0.5rem 1.4rem;
+  color: white;
+  background: #e4a59d;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.get-started-button:hover {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(250, 235, 215);
+}
+
+.intro-text {
+  line-height: 2;
+  color: white;
+}
+
+.intro-textbox h4 {
+  text-transform: capitalize;
+}
+
+.intro-textbox h6 {
+  padding-bottom: 1rem;
+}
+
+/* Short introduction starts here*/
+.short-introduction {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.short-introduction-text {
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.short-introduction-text2 {
+  /*padding: 2rem;*/
+  padding: 1.5rem 2rem;
+  text-align: justify;
+  color: rgba(63, 63, 63, 0.8);
+}
+
+.short-introduction-text .button {
+  width: 40%;
+}
+
+.short-introduction img {
+  width: 100%;
+}
+
+.short-introduction-img {
+  flex: 1 1 30rem;
+  padding: 3rem;
+}
+
+/* Join starts here */
+
+.join {
+  /*width: 100vw;*/
+  min-height: 70vh;
+  background-image: url("img/running-boy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-position: 50% 50%;*/
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-box {
+  background-color: rgba(23, 38, 30, 0.7);
+}
+
+.join-textbox {
+  color: white;
+  max-width: 60ch;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-textbox h3 {
+  margin-bottom: 1rem;
+}
+
+.join-textbox h5 {
+  padding: 2rem 0rem;
+}
+
+.join-text {
+  line-height: 1.5;
+}
+
+.join-textbox .button {
+  width: 40%;
+  border: none;
+}
+
+/*Programs section starts here*/
+
+.programs {
+  margin: 3rem auto;
+}
+
+.programs-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+.programs-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #c3c4c5;
+  border-radius: 0.3125rem;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
+  width: 80%;
+}
+
+.program-name {
+  margin-bottom: 1rem;
+}
+
+.program-time {
+  color: rgba(102, 101, 101, 0.8);
+  margin-bottom: 2rem;
+}
+
+.program-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lni-checkmark-circle {
+  color: black !important;
+  margin: 0.3rem;
+}
+
+.program-textbox .button {
+  width: 30%;
+  margin: auto;
+}
+
+/* Carousel */
+
+.carousel-photo-container {
+  padding: 50px;
+}
+
+.carousel-text {
+  height: 100%;
+}
+
+.carousel-text-inner::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10d";
+  font-size: 3rem;
+  color: #d7d7d7;
+  display: block;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.carousel-text-inner::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  font-size: 3rem;
+  color: #d7d7d7;
+  display: block;
+  text-align: right;
+  padding-right: 1.5rem;
+}
+
+.carousel-sign::before,
+.carousel-sign::after {
+  display: inline-block;
+  content: "";
+  background-color: black;
+  height: 1px;
+  width: 1rem;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  .intro {
+    height: 80vh;
+  }
+
+  .short-introduction-text2 {
+    padding: 1.5rem 4rem;
+  }
+
+  .short-introduction-text .button {
+    width: 20%;
+  }
+
+  .program-textbox {
+    width: 60%;
+  }
+  .program-textbox .button {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .intro {
+    height: 90vh;
+  }
+
+  .join {
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .join-box {
+    margin-left: 3rem;
+  }
+
+  .join-textbox .button {
+    width: 20%;
+  }
+
+  .programs {
+    width: 80%;
+  }
+
+  .programs-box {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .program-textbox {
+    padding: 1rem 2rem;
+    height: 25rem;
+    position: relative;
+  }
+
+  .program-textbox:hover {
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+
+  .program-list {
+    padding: 1.5rem 0 1.5rem 0;
+  }
+
+  .program-textbox.button {
+    position: absolute;
+    bottom: 0.5rem;
+  }
+}
